@@ -34,7 +34,7 @@ public class StateAdapter extends RecyclerView.Adapter<StateAdapter.ViewHolder>{
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         StateModel model = stateModels.get(position);
         holder.binding.tvCity.setText(model.getStateName());
-        holder.binding.tvActive.setText(model.getActive());
+        holder.binding.tvActiveNo.setText(model.getActive());
         holder.binding.tvTodayCaseNo.setText(model.getConfirmed());
         holder.binding.tvDeathNo.setText(model.getDeath());
         holder.binding.tvRecoveredNo.setText(model.getRecovered());
